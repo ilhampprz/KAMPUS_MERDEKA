@@ -1,0 +1,36 @@
+Kalkulator Kuu
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body bgcolor="#D3DEDC">
+    <form id="formulir">
+        <input type="text" name="number" onfocus="angka1()" value="" placeholder="Masukan Nilai Angka 1" />
+        <br /><br />
+        <input type="text" name="nomor" onfocus="angka2()" value="" placeholder="Masukan Nilai Angka 2" />
+        <br><br>
+
+        <!-- Pertambahan -->
+        <input type="button" value="+" onclick="tambah()">
+        <!-- Pengurangan -->
+        <input type="button" value="-" onclick="kurang()">
+        <!-- Perkalian -->
+        <input type="button" value="x" onclick="kalian()">
+        <!-- Pembagian -->
+        <input type="button" value="/" onclick="bagian()">
+        <!-- Perpangkatan -->
+        <input type="button" value="^" onclick="pangkat()">
+
+        <input type="text" name="hasil" value="" disabled />
+        <input type="button" name="batal" value="Batal" onclick="kosongAll()" />
+    </form>
+    <script src="tugas 6 js.js"></script>
+</body>
+
+</html>
