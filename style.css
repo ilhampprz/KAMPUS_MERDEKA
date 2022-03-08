@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    color: #7897AB;
+}
+
+.head-table {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+table {
+    width: 60%;
+}
+
+thead {
+    color: #7897AB;
+    background-color: #B4CFB0;
+}
+
+table,
+tr,
+th,
+td,
+thead,
+tbody {
+    text-align: center;
+    border: 1px solid #A0937D;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #C8F2EF;
+}
