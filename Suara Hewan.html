@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Latihan Jquery Event</title>
+        <script src="jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("div.gajah").click(function () {
+                    $(this).css({
+                        background: "url('Gambar/gajah.JFIF')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/gajah.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+                
+                $("div.kambing").click(function () {
+                    $(this).css({
+                        background: "url('Gambar/kambing.JFIF')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/kambing.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+
+                $("div.nyamuk").click(function () {
+                    $(this).css({
+                        background: "url('Gambar/nyamuk.JFIF')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/nyamuk.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+
+                $("div.sapi").click(function () {
+                    $(this).css({
+                        background: "url('Gambar/sapi.JFIF')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/sapi.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+
+                $("div.singa").click(function () {
+                    $(this).css({
+                        background: "url('Gambar/singa.JFIF')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/singa.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+                
+            });
+        </script>
+        <style type="text/css">
+            div {
+                background: #867AE9;
+                width: 220px;
+                height: 220px;
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Animals Voice</p>
+        <div class="gajah">Hewan Gajah</div>
+        <div class="kambing">Hewan Kambing</div>
+        <div class="nyamuk">Hewan Nyamuk</div>
+        <div class="sapi">Hewan Sapi</div>
+        <div class="singa">Hewan Singa</div>
+    </body>
+
+</html>
